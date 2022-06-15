@@ -1,0 +1,11 @@
+CREATE TABLE IF NOT EXISTS places
+(
+    id VARCHAR(60) DEFAULT RANDOM_UUID() PRIMARY KEY,
+    name VARCHAR NOT NULL,
+    description VARCHAR, 
+    address VARCHAR NOT NULL, 
+    city VARCHAR NOT NULL, 
+    tlf VARCHAR,
+    status VARCHAR NOT NULL,
+    plevel INTEGER NOT NULL
+);
